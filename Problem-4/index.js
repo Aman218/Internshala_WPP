@@ -3,7 +3,8 @@ let year=todaysDate.getFullYear();
 let christmasDate=new Date(year,11,25);
 // console.log(christmasDate);
 if(todaysDate>christmasDate){
-    year=todaysDate.setFullYear(year+1);
+    year=year+1;
+    christmasDate=new Date(year,11,25)
 }
 let timeDifference=christmasDate-todaysDate;
 
